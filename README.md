@@ -16,16 +16,16 @@
 		- 开发语言：Java
 		- 使用例子的正确姿势：
 			* 下载[Demo Project](https://github.com/MuchContact/EgovaMobileTest)
-			* 修改`EgovaMobileTest/src/test/java/MobileServerTest.java`中`System.setProperty("webdriver.chrome.driver", "/Users/muco/Software/chromedriver")`的路径配置。例如chromedriver.exe放置在c:/Users/muco/, 则修改为`System.setProperty("webdriver.chrome.driver", "c:/Users/muco/chromedriver.exe")`
+			* 修改`EgovaMobileTest/src/test/java/MobileServerTest.java```中```System.setProperty("webdriver.chrome.driver", "/Users/muco/Software/chromedriver")```的路径配置。例如chromedriver.exe放置在c:/Users/muco/, 则修改为```System.setProperty("webdriver.chrome.driver", "c:/Users/muco/chromedriver.exe")```
 			* 添加gradle到path
 			* 在工程目录路径下执行gradle test，无报错说明环境配置ok
 	1. 课堂实践（3人一组共同完成以下任务）
 
-	任务：
-		1. 完成登录测试
-		1. 完成产品列表测试
+		- 任务：
+			1. 完成登录测试
+			1. 完成产品列表测试
 
-	时间要求：30min
+		- 时间要求：30min
 
 	1. 拓展
 	  * 自动化测试在调试中的应用
