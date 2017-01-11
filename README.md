@@ -25,8 +25,11 @@
 
 	1. 课堂实践（3人一组共同完成以下任务）
 
+		[内网站点入口](http://192.168.32.179:8080/egovaProj/view/egovamobile/city/desktop.jsp)
+			- username: egova2012
+			- password: egova2012
 		- 任务：
-			1. 完成登录测试
+			1. 完成登录、注销测试
 			1. 完成产品列表测试
 
 		- 时间要求：30min
