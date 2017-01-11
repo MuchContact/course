@@ -1,6 +1,6 @@
 # Selenium课程培训
 1. 课前准备：
-	* 环境准备(请使用迅雷下载以下软件，须培训前完成)
+	* 环境准备(<font color=red>直接下载速度较慢，请使用迅雷下载以下软件，须培训前完成</font>)
 		- 安装Java1.8
 		- 安装Intellij IDEA(社区版即可)  [下载地址](https://www.jetbrains.com/idea/)
 		- 安装gradle，将bin目录加入path系统环境变量 [下载地址](https://gradle.org/gradle-download/)
