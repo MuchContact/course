@@ -6,7 +6,7 @@
 		- 安装gradle，将bin目录加入path系统环境变量 [下载地址](https://gradle.org/gradle-download/)
 		- 安装chrome，版本必须>=54.0.2840.0[下载地址](https://chromedriver.storage.googleapis.com/2.27/chromedriver_win32.zip)
 		- 下载chrome webdriver [下载地址](https://chromedriver.storage.googleapis.com/index.html?path=2.27/)
-		- 下载[Demo Project](https://github.com/MuchContact/EgovaMobileTest)然后在命令行中执行`gradle build`下载依赖包，这一步会比较耗时
+		- 下载[Demo Project](https://github.com/MuchContact/EgovaMobileTest)然后在命令行中执行`gradle build`下载依赖包，这一步会比较耗时（`不要关心build failed，这个没关系`）
 		![命令效果](screenshot/gradle-build.png)
 	* 资料预习
 		- [Selenium文档](https://github.com/SeleniumHQ/selenium)
