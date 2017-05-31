@@ -24,16 +24,17 @@ git log
 # 练习——git操作标准布局svn仓库
 1. 在SVN Server上创建标准布局项目代码仓库
 1. 使用git修改并提交代码到SVN Server
-    ```
-    git svn init <svn-url-without-trunk-directory> -s
-    git svn fetch
-    ```
-    手动修改任意文件
-    ```
-    git add .
-    git commit -m "add something"
-    git svn dcommit
-    ```
+      ```
+      git svn init <svn-url-without-trunk-directory> -s
+      git svn fetch
+      ```
+      手动修改任意文件
+      ```
+      git add .
+      git commit -m "add something"
+      git svn dcommit
+      ```
+    
 1. 查看SVN仓库历史
 
 # 练习——git操作非标准svn仓库
@@ -45,6 +46,7 @@ git log
     git svn fetch
     ```
     修改文件
+    
     ```
     git add .
     git commit -m "add something"
