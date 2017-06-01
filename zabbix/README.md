@@ -1,20 +1,31 @@
-# Zabbix讲解
-## 基本简介 [15min]
+# Zabbix介绍
+[基本简介](#introduce)
+
+[亲身体验](#tryit)
+
+[安装步骤](#install)
+
+-- [安装Server](#install-server)
+
+-- [安装Agent](#install-agent)
+
+
+## <a name="introduce"></a>基本简介 [15min]
 [Zabbix](http://www.zabbix.com/)是一个开源的企业级系统监控解决方案，系统结构见图1.
 ![图1](http://img1.51cto.com/attachment/201208/130335905.png)
 - Zabbix Server：接收Agent上报的数据，写入数据库（- MySQL、Oracle等），支持linux，不支持windows；和Agent双向通信，支持向agent发送指令的方式
 - Web Server: Zabbix Server端前端页面,用以展示监测数据和配置zabbix，用PHP实现，一般部署在Apache上，与OS平台无关
 - Zabbix Agent：被监控主机需要安装agent程序来采集数据，网络设备通过SNMP方式采集数据
 
-## 亲身体验 [20min]
+## <a name="tryit"></a>亲身体验 [20min]
 [内网演示地址](https://www.zabbix.org/zabbix/index.php)
 
 [在线演示](https://www.zabbix.org/zabbix/index.php)
 
 [功能截图](http://www.zabbix.com/screenshots)
 
-## 安装步骤 [10min]
-### [Server](https://www.zabbix.com/documentation/3.2/manual/installation/install_from_packages/server_installation_with_mysql)
+## <a name="install"></a>安装步骤 [10min]
+### <a name="install-server"></a>[Server](https://www.zabbix.com/documentation/3.2/manual/installation/install_from_packages/server_installation_with_mysql)
 1. #### 配置源
     Zabbix在CentOS基本源里不可获得，因此必须配置EPEL 和Zabbix 官方repository
 
@@ -65,7 +76,7 @@
 
     下载[字体文件](graphfont.ttf)，并存放在zabbix server的`/usr/share/zabbix/fonts/`目录
 
-### [Agent](https://www.zabbix.com/documentation/3.2/manual/installation/install_from_packages/agent_installation)
+### <a name="install-agent"></a>[Agent](https://www.zabbix.com/documentation/3.2/manual/installation/install_from_packages/agent_installation)
 #### CentOS安装步骤
 1. ##### 安装zabbix-agent
     CentOS7
