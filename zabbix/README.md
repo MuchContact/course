@@ -9,6 +9,15 @@
 
 -- [安装Agent](#install-agent)
 
+[常见问题](#problem)
+
+[使用场景](#scenario)
+
+-- [场景1](#scenario1)
+
+-- [场景2](#scenario2)
+
+---
 
 ## <a name="introduce"></a>基本简介 [15min]
 [Zabbix](http://www.zabbix.com/)是一个开源的企业级系统监控解决方案，系统结构见图1.
@@ -137,12 +146,11 @@
     zabbix_agentd.exe --start
     ```
 
-## 安装常见问题 [5min]
+## <a name="problem"></a>安装常见问题 [5min]
 1. Zabbix Server不支持window，建议使用centos 7.
-1.
 
-## 使用场景介绍
-### 场景一：主机内存不足时发送短信给xxx用户 [5min]
+## <a name="scenario"></a>使用场景介绍
+### <a name="scenario1"></a>场景一：主机内存不足时发送短信给xxx用户 [5min]
 1. ## 配置短信脚本
     使用root用户登录Server
     ```
@@ -160,4 +168,4 @@
 1. ## 创建报警媒介
     ![示例](images/alermmedia.gif)
 
-### 场景二：数据库连接数超过400时，发送短信给xxx用户 [15min]
+### <a name="scenario2"></a>场景二：数据库连接数超过400时，发送短信给xxx用户 [15min]
