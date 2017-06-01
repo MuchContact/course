@@ -63,7 +63,7 @@
 
 1. #### 更换字体以处理图表中文乱码问题
 
-    下载[字体文件](http://note.youdao.com/groupshare/?token=3A8B07484C6D4499A81DE8D70A9430C5&gid=48867582)，并存放在zabbix server的`/usr/share/zabbix/fonts/`目录
+    下载[字体文件](graphfont.ttf)，并存放在zabbix server的`/usr/share/zabbix/fonts/`目录
 
 ### [Agent](https://www.zabbix.com/documentation/3.2/manual/installation/install_from_packages/agent_installation)
 #### CentOS安装步骤
@@ -132,5 +132,21 @@
 
 ## 使用场景介绍
 ### 场景一：主机内存不足时发送短信给xxx用户 [5min]
+1. ## 配置短信脚本
+    使用root用户登录Server
+    ```
+    cd /usr/lib/zabbix
+    chmod a+w alertscripts
+    ```
+
+    编写并拷贝sms.sh到alertscripts目录
+
+    ```
+    cd /usr/lib/zabbix/alertscripts
+    chmod a+x sms-hz.sh
+    ```
+
+1. ## 创建报警媒介
+    ![示例](images/alermmedia.gif)
 
 ### 场景二：数据库连接数超过400时，发送短信给xxx用户 [15min]
