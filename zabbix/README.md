@@ -26,8 +26,19 @@
 - Web Server: Zabbix Server端前端页面,用以展示监测数据和配置zabbix，用PHP实现，一般部署在Apache上，与OS平台无关
 - Zabbix Agent：被监控主机需要安装agent程序来采集数据，网络设备通过SNMP方式采集数据
 
+### 支持的监控项：
+1. CPU, memory, network, disk space and processes
+1. 无代理的应用服务
+1. 网络设备
+1. 虚拟机
+1. 自定义服务
+1. JAVA容器
+1. Web Services
+1. IPMI硬件监控
+
+
 ## <a name="tryit"></a>亲身体验 [20min]
-[内网演示地址](https://www.zabbix.org/zabbix/index.php)
+[内网演示地址](http://192.168.31.244:8070/zabbix)
 
 [在线演示](https://www.zabbix.org/zabbix/index.php)
 
