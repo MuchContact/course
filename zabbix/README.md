@@ -185,4 +185,43 @@
 
 ### <a name="scenario2"></a>场景二：数据库连接数超过400时，发送短信给xxx用户 [15min]
 
-1. ## 
+1. ## 导入模板
+在“配置”-->“模板”页面选择导入[模板](zbx_remote_mysql_templates.xml)
+1. ## 新增监控项
+![示例](images/create-monitor-item.gif)
+1. ## 创建触发器
+![示例](images/create-trigger-for-mysql.gif)
+1. ## 在某一主机上（如101机器）配置、安装MySQL Agent扩展程序
+  1. 安装[扩展脚本](chk_remote_mysql.sh)
+      将扩展脚本放至/usr/lib/zabbix/externalscripts目录，并赋予可执行权限`chmod a+x chk_remote_mysql.sh`
+  1. 设置login-path
+
+      ```
+      mysql_config_editor set --login-path=hzcg --host=hzcg.aliyun.com --user=root --password
+      ```
+
+  1. 修改zabbix-agentd.conf
+
+      ```
+      # version
+      sed -i '$a UserParameter=mysql.version[*],sudo -H -u root bash -c "/usr/lib/zabbix/externalscripts/chk_remote_mysql.sh Version $1 $2 $3 $4"' /etc/zabbix/zabbix_agentd.conf
+
+      # mysql 状态
+      sed -i '$a UserParameter=mysql.status[*],sudo -H -u root bash -c "/usr/lib/zabbix/externalscripts/chk_remote_mysql.sh $1 $2"' /etc/zabbix/zabbix_agentd.conf
+      # 监测连通性
+      sed -i '$a UserParameter=mysql.ping[*],sudo -H -u root bash -c "mysqladmin --login-path=$1 ping|grep -c alive"' /etc/zabbix/zabbix_agentd.conf
+
+      # 会话数
+      sed -i '$a UserParameter=mysql.processcount[*],sudo -H -u root bash -c "mysql --login-path=$1 -e\"show processlist\G;\"| egrep \"Host\:\" | awk \'END{print NR}\'"' /etc/zabbix/zabbix_agentd.conf
+
+      ```
+  1. 解决sudo执行问题
+      ```
+      vi /etc/sudoers (最好用visudo命令)
+      # 注释掉 Default requiretty 一行
+      # Default requiretty
+      ```
+1. ## 给该主机添加数据库模板
+![](images/add-template-to-machine.gif)
+1. ## 创建动作
+参见场景一
