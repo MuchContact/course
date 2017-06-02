@@ -38,7 +38,6 @@
 
 
 ## <a name="tryit"></a>亲身体验 [20min]
-[内网演示地址](http://192.168.31.244:8070/zabbix)
 
 [在线演示](https://www.zabbix.org/zabbix/index.php)
 
