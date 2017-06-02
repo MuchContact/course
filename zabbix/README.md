@@ -180,8 +180,9 @@
     ![示例](images/alermmedia.gif)
 
 1. ## 创建xxx用户
-
+    ![](images/create-user.gif)
 1. ## 添加动作
+    ![](images/action1.gif)
 
 ### <a name="scenario2"></a>场景二：数据库连接数超过400时，发送短信给xxx用户 [15min]
 
