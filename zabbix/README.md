@@ -184,6 +184,7 @@
     ![](images/action1.gif)
 
 ### <a name="scenario2"></a>场景二：数据库连接数超过400时，发送短信给xxx用户 [15min]
+> Cautions: 这个过程可以类比为：创建数据库结构，然后客户端向数据库插入数据
 
 1. ## 导入模板
     在“配置”-->“模板”页面选择导入[模板](zbx_remote_mysql_templates.xml)
@@ -221,7 +222,7 @@
           # 注释掉 Default requiretty 一行
           # Default requiretty
           ```
-      
+
 1. ## 给该主机添加数据库模板
     ![](images/add-template-to-machine.gif)
 1. ## 创建动作
