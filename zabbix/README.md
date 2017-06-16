@@ -45,6 +45,7 @@
 
 ## <a name="install"></a>安装步骤 [10min]
 ### <a name="install-server"></a>[Server](https://www.zabbix.com/documentation/3.2/manual/installation/install_from_packages/server_installation_with_mysql)
+1. #### 安装MySQL数据库
 1. #### 配置源
     Zabbix在CentOS基本源里不可获得，因此必须配置EPEL 和Zabbix 官方repository
 
@@ -64,7 +65,8 @@
     ```
     yum install zabbix-server-mysql zabbix-web-mysql zabbix-java-gateway
     ```
-
+1. #### 初始化数据库
+    参见[Zabbix Server installation with MySQL database](https://www.zabbix.com/documentation/3.2/manual/installation/install_from_packages/server_installation_with_mysql)
 1. #### 修改zabbix-server配置
     配置文件在/etc/zabbix/zabbix_server.conf，
     修改以下参数：
