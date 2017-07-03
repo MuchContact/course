@@ -17,6 +17,8 @@
 
 -- [场景2](#scenario2)
 
+[开发者文档](#dev-doc)
+
 ---
 
 ## <a name="introduce"></a>基本简介 [15min]
@@ -231,3 +233,7 @@
     ![](images/add-template-to-machine.gif)
 1. ## 创建动作
     参见场景一
+
+## <a name="dev-doc"></a>开发者文档
+
+看[这里](README-DEV.md)
