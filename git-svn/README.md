@@ -1,6 +1,6 @@
 # 预备
-  1. 安装SVN Server
-  1. 安装Git Client
+  1. 安装[SVN Server](https://www.visualsvn.com/server/download/)
+  1. 安装[Git Client](https://git-scm.com/downloads)
 
 # 练习——git基本操作
 1. 初始化git仓库
