@@ -1,3 +1,8 @@
+# 请提前准备一下内容！！！
+  
+  1. 安装[SVN Server](https://www.visualsvn.com/server/download/)
+  1. 安装[Git Client](https://git-scm.com/downloads)
+  
 # Git client基本用法 (20min)
   - git init
   - git add
@@ -15,7 +20,8 @@
 # svn规范（10min）
 
 # git-svn基本用法(15min)
-
+  - [git-svn](git-svn.md)
+  
 # 扩展知识（10min）
   - 关于Git Server（5min）
   - 关于ssh(5min)
