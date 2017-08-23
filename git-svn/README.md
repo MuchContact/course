@@ -4,7 +4,7 @@
   1. 安装[Git Client](https://git-scm.com/downloads)
   1. 扫码加临时群
 
-    ![](images/tmp-group.png)
+    ![xxx](images/tmp-group.png)
 
 # Git client基本用法 (20min)
   - git init
