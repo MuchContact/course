@@ -1,7 +1,7 @@
 # 预备
   1. 安装[SVN Server](https://www.visualsvn.com/server/download/)
   1. 安装[SVN Client](http://rj.baidu.com/soft/detail/17682.html)
-  1. 安装[Git Client](https://git-scm.com/downloads)
+  1. 安装32位（windows64位Git Client有bug）[Git Client](https://git-scm.com/downloads)
 
 # 练习——git基本操作
 1. 初始化git仓库
