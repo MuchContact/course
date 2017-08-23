@@ -2,7 +2,10 @@
   
   1. 安装[SVN Server](https://www.visualsvn.com/server/download/)
   1. 安装[Git Client](https://git-scm.com/downloads)
-  
+  1. 扫码加临时群
+
+    ![](images/tmp-group.png)
+
 # Git client基本用法 (20min)
   - git init
   - git add
@@ -10,7 +13,7 @@
   ***
   - git remote add
   - git push
-  
+
 # svn client基本用法 (10min)
 
 # 场景对比 （10min）
@@ -21,11 +24,11 @@
 
 # git-svn基本用法(15min)
   - [git-svn](git-svn.md)
-  
+
 # 扩展知识（10min）
   - 关于Git Server（5min）
   - 关于ssh(5min)
- 
+
 # Git高级用法(35min)
   - branch
   - cherry-pick
