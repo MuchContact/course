@@ -1,6 +1,7 @@
 # 请提前准备以下内容！！！
   
   1. 安装[SVN Server](https://www.visualsvn.com/server/download/)
+  1. 安装[SVN Client](http://rj.baidu.com/soft/detail/17682.html)
   1. 安装[Git Client](https://git-scm.com/downloads)
   1. 扫码加临时群
 

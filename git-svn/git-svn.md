@@ -1,5 +1,6 @@
 # 预备
   1. 安装[SVN Server](https://www.visualsvn.com/server/download/)
+  1. 安装[SVN Client](http://rj.baidu.com/soft/detail/17682.html)
   1. 安装[Git Client](https://git-scm.com/downloads)
 
 # 练习——git基本操作
@@ -34,7 +35,7 @@ git log
       git commit -m "add something"
       git svn dcommit
       ```
-    
+
 1. 查看SVN仓库历史
 
 # 练习——git操作非标准svn仓库
@@ -46,7 +47,7 @@ git log
     git svn fetch
     ```
     修改文件
-    
+
     ```
     git add .
     git commit -m "add something"
