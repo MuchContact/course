@@ -3,9 +3,6 @@
   1. 安装[SVN Server](https://www.visualsvn.com/server/download/)
   1. 安装[SVN Client](http://rj.baidu.com/soft/detail/17682.html)
   1. 安装32位（windows64位Git Client有bug）[Git Client](https://git-scm.com/downloads)
-  1. 扫码加临时群
-
-    ![xxx](images/tmp-group.png)
 
 # Git client基本用法 (20min)
   - git init
