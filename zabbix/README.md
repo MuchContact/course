@@ -163,7 +163,9 @@
     ```
 
 ## <a name="problem"></a>安装常见问题 [5min]
-1. Zabbix Server不支持window，建议使用centos 7.
+1. Zabbix Server不支持window，建议使用centos 7（使用Docker安装则无此限制）.
+1. 新建的主机一定要添加至少一个监控项
+1. 添加自定义脚本时，需要注意目录（读写）、文件（执行）权限
 
 ## <a name="scenario"></a>使用场景介绍
 ### <a name="scenario1"></a>场景一：主机内存不足时发送短信给xxx用户 [5min]
